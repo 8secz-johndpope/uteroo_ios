@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59B441ADE27F6621BF09D2E1 /* Pods_uteroo_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA70EFE26F40DC743D478EDC /* Pods_uteroo_iosTests.framework */; };
+		697198FC23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */; };
+		697198FF23CE246A004D07C0 /* undraw_events_2p66.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FE23CE246A004D07C0 /* undraw_events_2p66.png */; };
+		6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */; };
+		6971990323CE26A9004D07C0 /* undraw_booking_33fn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6971990223CE26A9004D07C0 /* undraw_booking_33fn.png */; };
+		69791F3023C9EB9D000B1F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F2F23C9EB9D000B1F0C /* AppDelegate.swift */; };
+		69791F3223C9EB9D000B1F0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F3123C9EB9D000B1F0C /* SceneDelegate.swift */; };
+		69791F3423C9EB9D000B1F0C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F3323C9EB9D000B1F0C /* DashboardViewController.swift */; };
+		69791F3623C9EB9D000B1F0C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F3523C9EB9D000B1F0C /* CalendarViewController.swift */; };
+		69791F3923C9EB9D000B1F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69791F3723C9EB9D000B1F0C /* Main.storyboard */; };
+		69791F3C23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69791F3A23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld */; };
+		69791F3E23C9EBA0000B1F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69791F3D23C9EBA0000B1F0C /* Assets.xcassets */; };
+		69791F4123C9EBA0000B1F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69791F3F23C9EBA0000B1F0C /* LaunchScreen.storyboard */; };
+		69791F4C23C9EBA0000B1F0C /* uteroo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F4B23C9EBA0000B1F0C /* uteroo_iosTests.swift */; };
+		69791F5723C9EBA0000B1F0C /* uteroo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F5623C9EBA0000B1F0C /* uteroo_iosUITests.swift */; };
+		69791F6523CA0335000B1F0C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F6423CA0335000B1F0C /* AccountViewController.swift */; };
+		69791F6923CA1381000B1F0C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */; };
+		69B348FD23CA320C0096962A /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B348FC23CA320C0096962A /* PopUpViewController.swift */; };
+		BA5069204EC93053701A79AB /* Pods_uteroo_ios_uteroo_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBE864EDACF051DB817932D /* Pods_uteroo_ios_uteroo_iosUITests.framework */; };
+		D0BEF884C0051A27E50FD58F /* Pods_uteroo_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCCB7D99E8A69BF44D5F5C5 /* Pods_uteroo_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69791F4823C9EBA0000B1F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69791F2423C9EB9D000B1F0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69791F2B23C9EB9D000B1F0C;
+			remoteInfo = uteroo_ios;
+		};
+		69791F5323C9EBA0000B1F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69791F2423C9EB9D000B1F0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69791F2B23C9EB9D000B1F0C;
+			remoteInfo = uteroo_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CCCB7D99E8A69BF44D5F5C5 /* Pods_uteroo_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uteroo_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448CB6141125EB6B62B91689 /* Pods-uteroo_ios-uteroo_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios-uteroo_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-uteroo_ios-uteroo_iosUITests/Pods-uteroo_ios-uteroo_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51BAC6C64F6D569E36353E0C /* Pods-uteroo_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_iosTests.release.xcconfig"; path = "Target Support Files/Pods-uteroo_iosTests/Pods-uteroo_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		67BB4846123796DB54EE0E93 /* Pods-uteroo_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios.release.xcconfig"; path = "Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios.release.xcconfig"; sourceTree = "<group>"; };
+		697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_girl_just_wanna_have_fun_9d5u.png; sourceTree = "<group>"; };
+		697198FE23CE246A004D07C0 /* undraw_events_2p66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_events_2p66.png; sourceTree = "<group>"; };
+		6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_time_management_30iu.png; sourceTree = "<group>"; };
+		6971990223CE26A9004D07C0 /* undraw_booking_33fn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_booking_33fn.png; sourceTree = "<group>"; };
+		69791F2C23C9EB9D000B1F0C /* uteroo_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uteroo_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69791F2F23C9EB9D000B1F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69791F3123C9EB9D000B1F0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69791F3323C9EB9D000B1F0C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		69791F3523C9EB9D000B1F0C /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		69791F3823C9EB9D000B1F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69791F3B23C9EB9D000B1F0C /* uteroo_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uteroo_ios.xcdatamodel; sourceTree = "<group>"; };
+		69791F3D23C9EBA0000B1F0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69791F4023C9EBA0000B1F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69791F4223C9EBA0000B1F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69791F4723C9EBA0000B1F0C /* uteroo_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uteroo_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69791F4B23C9EBA0000B1F0C /* uteroo_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uteroo_iosTests.swift; sourceTree = "<group>"; };
+		69791F4D23C9EBA0000B1F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69791F5223C9EBA0000B1F0C /* uteroo_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uteroo_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69791F5623C9EBA0000B1F0C /* uteroo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uteroo_iosUITests.swift; sourceTree = "<group>"; };
+		69791F5823C9EBA0000B1F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69791F6423CA0335000B1F0C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		69B348FC23CA320C0096962A /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		7FBE864EDACF051DB817932D /* Pods_uteroo_ios_uteroo_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uteroo_ios_uteroo_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B264D761407134A5F840E6 /* Pods-uteroo_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uteroo_iosTests/Pods-uteroo_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90CE6B3EF981AC5284EBC679 /* Pods-uteroo_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios.debug.xcconfig"; path = "Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE47864799945425CF646C3 /* Pods-uteroo_ios-uteroo_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios-uteroo_iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-uteroo_ios-uteroo_iosUITests/Pods-uteroo_ios-uteroo_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA70EFE26F40DC743D478EDC /* Pods_uteroo_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uteroo_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69791F2923C9EB9D000B1F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BEF884C0051A27E50FD58F /* Pods_uteroo_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F4423C9EBA0000B1F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B441ADE27F6621BF09D2E1 /* Pods_uteroo_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F4F23C9EBA0000B1F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5069204EC93053701A79AB /* Pods_uteroo_ios_uteroo_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		215D1F3E46DA8129D6607938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCB7D99E8A69BF44D5F5C5 /* Pods_uteroo_ios.framework */,
+				7FBE864EDACF051DB817932D /* Pods_uteroo_ios_uteroo_iosUITests.framework */,
+				FA70EFE26F40DC743D478EDC /* Pods_uteroo_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49494A030AA93B67AA3FA980 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CE6B3EF981AC5284EBC679 /* Pods-uteroo_ios.debug.xcconfig */,
+				67BB4846123796DB54EE0E93 /* Pods-uteroo_ios.release.xcconfig */,
+				BFE47864799945425CF646C3 /* Pods-uteroo_ios-uteroo_iosUITests.debug.xcconfig */,
+				448CB6141125EB6B62B91689 /* Pods-uteroo_ios-uteroo_iosUITests.release.xcconfig */,
+				82B264D761407134A5F840E6 /* Pods-uteroo_iosTests.debug.xcconfig */,
+				51BAC6C64F6D569E36353E0C /* Pods-uteroo_iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		697198FD23CE2001004D07C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6971990223CE26A9004D07C0 /* undraw_booking_33fn.png */,
+				6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */,
+				697198FE23CE246A004D07C0 /* undraw_events_2p66.png */,
+				697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		69791F2323C9EB9D000B1F0C = {
+			isa = PBXGroup;
+			children = (
+				69791F2E23C9EB9D000B1F0C /* uteroo_ios */,
+				69791F4A23C9EBA0000B1F0C /* uteroo_iosTests */,
+				69791F5523C9EBA0000B1F0C /* uteroo_iosUITests */,
+				69791F2D23C9EB9D000B1F0C /* Products */,
+				49494A030AA93B67AA3FA980 /* Pods */,
+				215D1F3E46DA8129D6607938 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69791F2D23C9EB9D000B1F0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69791F2C23C9EB9D000B1F0C /* uteroo_ios.app */,
+				69791F4723C9EBA0000B1F0C /* uteroo_iosTests.xctest */,
+				69791F5223C9EBA0000B1F0C /* uteroo_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69791F2E23C9EB9D000B1F0C /* uteroo_ios */ = {
+			isa = PBXGroup;
+			children = (
+				69791F2F23C9EB9D000B1F0C /* AppDelegate.swift */,
+				69791F3123C9EB9D000B1F0C /* SceneDelegate.swift */,
+				69791F3323C9EB9D000B1F0C /* DashboardViewController.swift */,
+				69791F3523C9EB9D000B1F0C /* CalendarViewController.swift */,
+				69791F3723C9EB9D000B1F0C /* Main.storyboard */,
+				69791F3D23C9EBA0000B1F0C /* Assets.xcassets */,
+				69791F3F23C9EBA0000B1F0C /* LaunchScreen.storyboard */,
+				69791F4223C9EBA0000B1F0C /* Info.plist */,
+				697198FD23CE2001004D07C0 /* images */,
+				69791F3A23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld */,
+				69791F6423CA0335000B1F0C /* AccountViewController.swift */,
+				69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */,
+				69B348FC23CA320C0096962A /* PopUpViewController.swift */,
+			);
+			path = uteroo_ios;
+			sourceTree = "<group>";
+		};
+		69791F4A23C9EBA0000B1F0C /* uteroo_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				69791F4B23C9EBA0000B1F0C /* uteroo_iosTests.swift */,
+				69791F4D23C9EBA0000B1F0C /* Info.plist */,
+			);
+			path = uteroo_iosTests;
+			sourceTree = "<group>";
+		};
+		69791F5523C9EBA0000B1F0C /* uteroo_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69791F5623C9EBA0000B1F0C /* uteroo_iosUITests.swift */,
+				69791F5823C9EBA0000B1F0C /* Info.plist */,
+			);
+			path = uteroo_iosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69791F2B23C9EB9D000B1F0C /* uteroo_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69791F5B23C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_ios" */;
+			buildPhases = (
+				8A58BFCC66B64896C33747D8 /* [CP] Check Pods Manifest.lock */,
+				69791F2823C9EB9D000B1F0C /* Sources */,
+				69791F2923C9EB9D000B1F0C /* Frameworks */,
+				69791F2A23C9EB9D000B1F0C /* Resources */,
+				C56A769C48F0380B41301060 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uteroo_ios;
+			productName = uteroo_ios;
+			productReference = 69791F2C23C9EB9D000B1F0C /* uteroo_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69791F4623C9EBA0000B1F0C /* uteroo_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69791F5E23C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_iosTests" */;
+			buildPhases = (
+				0E07F841F1EEF21913B7BF74 /* [CP] Check Pods Manifest.lock */,
+				69791F4323C9EBA0000B1F0C /* Sources */,
+				69791F4423C9EBA0000B1F0C /* Frameworks */,
+				69791F4523C9EBA0000B1F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69791F4923C9EBA0000B1F0C /* PBXTargetDependency */,
+			);
+			name = uteroo_iosTests;
+			productName = uteroo_iosTests;
+			productReference = 69791F4723C9EBA0000B1F0C /* uteroo_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69791F5123C9EBA0000B1F0C /* uteroo_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69791F6123C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_iosUITests" */;
+			buildPhases = (
+				DFE91BCCF7EC15916DEE0B59 /* [CP] Check Pods Manifest.lock */,
+				69791F4E23C9EBA0000B1F0C /* Sources */,
+				69791F4F23C9EBA0000B1F0C /* Frameworks */,
+				69791F5023C9EBA0000B1F0C /* Resources */,
+				54390BCA40662934FF0D5F17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69791F5423C9EBA0000B1F0C /* PBXTargetDependency */,
+			);
+			name = uteroo_iosUITests;
+			productName = uteroo_iosUITests;
+			productReference = 69791F5223C9EBA0000B1F0C /* uteroo_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69791F2423C9EB9D000B1F0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Paballo Moloi";
+				TargetAttributes = {
+					69791F2B23C9EB9D000B1F0C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					69791F4623C9EBA0000B1F0C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 69791F2B23C9EB9D000B1F0C;
+					};
+					69791F5123C9EBA0000B1F0C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 69791F2B23C9EB9D000B1F0C;
+					};
+				};
+			};
+			buildConfigurationList = 69791F2723C9EB9D000B1F0C /* Build configuration list for PBXProject "uteroo_ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69791F2323C9EB9D000B1F0C;
+			productRefGroup = 69791F2D23C9EB9D000B1F0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69791F2B23C9EB9D000B1F0C /* uteroo_ios */,
+				69791F4623C9EBA0000B1F0C /* uteroo_iosTests */,
+				69791F5123C9EBA0000B1F0C /* uteroo_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69791F2A23C9EB9D000B1F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6971990323CE26A9004D07C0 /* undraw_booking_33fn.png in Resources */,
+				69791F4123C9EBA0000B1F0C /* LaunchScreen.storyboard in Resources */,
+				6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */,
+				697198FF23CE246A004D07C0 /* undraw_events_2p66.png in Resources */,
+				69791F3E23C9EBA0000B1F0C /* Assets.xcassets in Resources */,
+				69791F3923C9EB9D000B1F0C /* Main.storyboard in Resources */,
+				697198FC23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F4523C9EBA0000B1F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F5023C9EBA0000B1F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E07F841F1EEF21913B7BF74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uteroo_iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54390BCA40662934FF0D5F17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios-uteroo_iosUITests/Pods-uteroo_ios-uteroo_iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios-uteroo_iosUITests/Pods-uteroo_ios-uteroo_iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios-uteroo_iosUITests/Pods-uteroo_ios-uteroo_iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A58BFCC66B64896C33747D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uteroo_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56A769C48F0380B41301060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE91BCCF7EC15916DEE0B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uteroo_ios-uteroo_iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69791F2823C9EB9D000B1F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69791F3623C9EB9D000B1F0C /* CalendarViewController.swift in Sources */,
+				69791F3423C9EB9D000B1F0C /* DashboardViewController.swift in Sources */,
+				69791F6523CA0335000B1F0C /* AccountViewController.swift in Sources */,
+				69791F3023C9EB9D000B1F0C /* AppDelegate.swift in Sources */,
+				69791F3223C9EB9D000B1F0C /* SceneDelegate.swift in Sources */,
+				69791F3C23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld in Sources */,
+				69791F6923CA1381000B1F0C /* SettingsTableViewController.swift in Sources */,
+				69B348FD23CA320C0096962A /* PopUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F4323C9EBA0000B1F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69791F4C23C9EBA0000B1F0C /* uteroo_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69791F4E23C9EBA0000B1F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69791F5723C9EBA0000B1F0C /* uteroo_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69791F4923C9EBA0000B1F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69791F2B23C9EB9D000B1F0C /* uteroo_ios */;
+			targetProxy = 69791F4823C9EBA0000B1F0C /* PBXContainerItemProxy */;
+		};
+		69791F5423C9EBA0000B1F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69791F2B23C9EB9D000B1F0C /* uteroo_ios */;
+			targetProxy = 69791F5323C9EBA0000B1F0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69791F3723C9EB9D000B1F0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69791F3823C9EB9D000B1F0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69791F3F23C9EBA0000B1F0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69791F4023C9EBA0000B1F0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69791F5923C9EBA0000B1F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69791F5A23C9EBA0000B1F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69791F5C23C9EBA0000B1F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CE6B3EF981AC5284EBC679 /* Pods-uteroo_ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69791F5D23C9EBA0000B1F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BB4846123796DB54EE0E93 /* Pods-uteroo_ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69791F5F23C9EBA0000B1F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B264D761407134A5F840E6 /* Pods-uteroo_iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_iosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uteroo_ios.app/uteroo_ios";
+			};
+			name = Debug;
+		};
+		69791F6023C9EBA0000B1F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BAC6C64F6D569E36353E0C /* Pods-uteroo_iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_iosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uteroo_ios.app/uteroo_ios";
+			};
+			name = Release;
+		};
+		69791F6223C9EBA0000B1F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE47864799945425CF646C3 /* Pods-uteroo_ios-uteroo_iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uteroo_ios;
+			};
+			name = Debug;
+		};
+		69791F6323C9EBA0000B1F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448CB6141125EB6B62B91689 /* Pods-uteroo_ios-uteroo_iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = uteroo_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Uteroo.uteroo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uteroo_ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69791F2723C9EB9D000B1F0C /* Build configuration list for PBXProject "uteroo_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69791F5923C9EBA0000B1F0C /* Debug */,
+				69791F5A23C9EBA0000B1F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69791F5B23C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69791F5C23C9EBA0000B1F0C /* Debug */,
+				69791F5D23C9EBA0000B1F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69791F5E23C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69791F5F23C9EBA0000B1F0C /* Debug */,
+				69791F6023C9EBA0000B1F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69791F6123C9EBA0000B1F0C /* Build configuration list for PBXNativeTarget "uteroo_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69791F6223C9EBA0000B1F0C /* Debug */,
+				69791F6323C9EBA0000B1F0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69791F3A23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69791F3B23C9EB9D000B1F0C /* uteroo_ios.xcdatamodel */,
+			);
+			currentVersion = 69791F3B23C9EB9D000B1F0C /* uteroo_ios.xcdatamodel */;
+			path = uteroo_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 69791F2423C9EB9D000B1F0C /* Project object */;
+}

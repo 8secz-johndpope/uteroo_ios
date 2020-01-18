@@ -23,7 +23,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     
-    @IBAction func showPopup(_ sender: AnyObject) {
+  /*  @IBAction func showPopup(_ sender: AnyObject) {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "destinationVC") as! PopUpViewController
@@ -31,6 +31,6 @@ class SettingsTableViewController: UITableViewController {
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
 
         self.present(destVC, animated: true, completion: nil)
-    }
+    }*/
     
 }

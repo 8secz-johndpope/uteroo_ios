@@ -12,12 +12,16 @@ class CycleDurationViewController: UIViewController, UIPickerViewDataSource, UIP
     
     @IBOutlet weak var cycleDurationPicker: UIPickerView!
     
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     var pickerData: [String] = [String]()
     var selectedValue = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        nextButton.isEnabled = false
         pickerData = ["1 day", "2 days", "3 days", "4 days", "5 days", "6 days", "7 days","8 days","9 days",
         "10 days","11 days","12 days","13 days","14 days","15 days","16 days","17 days","18 days","19 days","20 days","21 days","22 days","23 days","24 days","25 days","26 days","27 days","28 days","29 days","30 days","31 days","32 days","33 days","34 days","35 days"]
         
@@ -46,6 +50,12 @@ class CycleDurationViewController: UIViewController, UIPickerViewDataSource, UIP
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        nextButton.isEnabled = true
            selectedValue = pickerData[row] as String
     }
+    
+    @IBAction func nextButton(_ sender: Any) {
+        UserDefaults.standard.set(selectedValue, forKey: "cycleDuration")
+    }
+    
 }

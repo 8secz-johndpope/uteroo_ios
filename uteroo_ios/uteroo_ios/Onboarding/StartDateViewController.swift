@@ -30,6 +30,10 @@ class StartDateViewController: UIViewController {
         nextButton.isEnabled = true
     }
     
+    @IBAction func onNextClick(_ sender: Any) {
+        UserDefaults.standard.set(selectedValue, forKey: "startDate")
+    }
+    
     override func didReceiveMemoryWarning() {
            super.didReceiveMemoryWarning()
            // Dispose of any resources that can be recreated.

@@ -25,6 +25,8 @@
 		69791F5723C9EBA0000B1F0C /* uteroo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F5623C9EBA0000B1F0C /* uteroo_iosUITests.swift */; };
 		69791F6523CA0335000B1F0C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F6423CA0335000B1F0C /* AccountViewController.swift */; };
 		69791F6923CA1381000B1F0C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */; };
+		69A51CC523D6164800EF143E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A51CC423D6164700EF143E /* logo.png */; };
+		69A51CC723D616BB00EF143E /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A51CC623D616BB00EF143E /* LaunchViewController.swift */; };
 		69ADEC0723D57FAC00AE9C46 /* StartDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ADEC0623D57FAC00AE9C46 /* StartDateViewController.swift */; };
 		69B73BA223D357AE003433D3 /* PeriodDurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B73BA123D357AE003433D3 /* PeriodDurationViewController.swift */; };
 		69B73BA623D35E9F003433D3 /* CycleDurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B73BA523D35E9F003433D3 /* CycleDurationViewController.swift */; };
@@ -80,6 +82,8 @@
 		69791F5823C9EBA0000B1F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69791F6423CA0335000B1F0C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		69A51CC423D6164700EF143E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		69A51CC623D616BB00EF143E /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		69ADEC0623D57FAC00AE9C46 /* StartDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDateViewController.swift; sourceTree = "<group>"; };
 		69B73BA123D357AE003433D3 /* PeriodDurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodDurationViewController.swift; sourceTree = "<group>"; };
 		69B73BA523D35E9F003433D3 /* CycleDurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDurationViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		697198FD23CE2001004D07C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				69A51CC423D6164700EF143E /* logo.png */,
 				69B73BA723D36456003433D3 /* undraw_terms_lso0.png */,
 				6971990223CE26A9004D07C0 /* undraw_booking_33fn.png */,
 				6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */,
@@ -194,6 +199,7 @@
 				69791F3A23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld */,
 				69791F6423CA0335000B1F0C /* AccountViewController.swift */,
 				69791F6823CA1381000B1F0C /* SettingsTableViewController.swift */,
+				69A51CC623D616BB00EF143E /* LaunchViewController.swift */,
 			);
 			path = uteroo_ios;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				6971990323CE26A9004D07C0 /* undraw_booking_33fn.png in Resources */,
 				69791F4123C9EBA0000B1F0C /* LaunchScreen.storyboard in Resources */,
 				6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */,
+				69A51CC523D6164800EF143E /* logo.png in Resources */,
 				697198FF23CE246A004D07C0 /* undraw_events_2p66.png in Resources */,
 				69791F3E23C9EBA0000B1F0C /* Assets.xcassets in Resources */,
 				69791F3923C9EB9D000B1F0C /* Main.storyboard in Resources */,
@@ -478,6 +485,7 @@
 				69B73BA623D35E9F003433D3 /* CycleDurationViewController.swift in Sources */,
 				69791F3423C9EB9D000B1F0C /* DashboardViewController.swift in Sources */,
 				69B73BAA23D37547003433D3 /* TermsAndConditionsViewController.swift in Sources */,
+				69A51CC723D616BB00EF143E /* LaunchViewController.swift in Sources */,
 				69B73BAC23D37C93003433D3 /* SetupViewController.swift in Sources */,
 				69791F6523CA0335000B1F0C /* AccountViewController.swift in Sources */,
 				69B73BA223D357AE003433D3 /* PeriodDurationViewController.swift in Sources */,

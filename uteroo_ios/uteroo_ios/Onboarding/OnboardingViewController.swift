@@ -11,9 +11,19 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
         
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func loadView() {
+    super.loadView()
+        let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLoad")
+        if(isFirstLaunch != false) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "home")
+            self.present(vc, animated:true, completion:nil)
+            self.view.window?.rootViewController?.show(vc, sender: self)
+            //present(vc, animated: false, completion: nil)  //show(vc, sender: self)
+            //presentViewController:viewController animated:YE completion:nil
+            //show(vc, sender: self)
+            //performSegue(withIdentifier: "id", sender: self)
+        }
     }
     
     override func didReceiveMemoryWarning() {

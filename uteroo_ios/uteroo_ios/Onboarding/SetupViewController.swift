@@ -9,12 +9,19 @@ import UIKit
 
 class SetupViewController : UIViewController {
     
+    @IBOutlet weak var acceptButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        acceptButton.isEnabled = false
     }
 
     @IBAction func acceptClick(_ sender: Any) {
-        UserDefaults.standard.set(false, forKey: "isFirstLoad")
+        UserDefaults.standard.set(true, forKey: "isFirstLoad")
     }
     
+    @IBAction func toggle(_ sender: Any) {
+        acceptButton.isEnabled = true
+    }
 }

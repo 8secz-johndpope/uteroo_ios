@@ -10,6 +10,7 @@
 		59B441ADE27F6621BF09D2E1 /* Pods_uteroo_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA70EFE26F40DC743D478EDC /* Pods_uteroo_iosTests.framework */; };
 		690E548223CF69130022ACCE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690E548123CF69130022ACCE /* OnboardingViewController.swift */; };
 		6953379523D9F77600CD644C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953379423D9F77600CD644C /* Sample.swift */; };
+		6953379723DAC2D600CD644C /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 6953379623DAC2D600CD644C /* ring.png */; };
 		697198FC23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */; };
 		697198FF23CE246A004D07C0 /* undraw_events_2p66.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FE23CE246A004D07C0 /* undraw_events_2p66.png */; };
 		6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */; };
@@ -62,6 +63,7 @@
 		67BB4846123796DB54EE0E93 /* Pods-uteroo_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios.release.xcconfig"; path = "Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios.release.xcconfig"; sourceTree = "<group>"; };
 		690E548123CF69130022ACCE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		6953379423D9F77600CD644C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		6953379623DAC2D600CD644C /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
 		697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_girl_just_wanna_have_fun_9d5u.png; sourceTree = "<group>"; };
 		697198FE23CE246A004D07C0 /* undraw_events_2p66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_events_2p66.png; sourceTree = "<group>"; };
 		6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_time_management_30iu.png; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		697198FD23CE2001004D07C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6953379623DAC2D600CD644C /* ring.png */,
 				69A51CC423D6164700EF143E /* logo.png */,
 				69B73BA723D36456003433D3 /* undraw_terms_lso0.png */,
 				6971990223CE26A9004D07C0 /* undraw_booking_33fn.png */,
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B73BA823D36456003433D3 /* undraw_terms_lso0.png in Resources */,
+				6953379723DAC2D600CD644C /* ring.png in Resources */,
 				6971990323CE26A9004D07C0 /* undraw_booking_33fn.png in Resources */,
 				69791F4123C9EBA0000B1F0C /* LaunchScreen.storyboard in Resources */,
 				6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */,

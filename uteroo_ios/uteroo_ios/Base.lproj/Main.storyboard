@@ -14,14 +14,53 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ring.png" translatesAutoresizingMaskIntoConstraints="NO" id="zOB-lT-hti">
+                                <rect key="frame" x="16" y="16" width="343" height="296"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zOB-lT-hti" secondAttribute="height" multiplier="343:128" constant="-450.1875" id="NMv-l0-BCY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days til next period" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-8Y-E2n">
+                                <rect key="frame" x="114" y="101.5" width="147" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ovulation day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za3-nd-uKo">
+                                <rect key="frame" x="16" y="154" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cycle duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbT-ik-GBG">
+                                <rect key="frame" x="132" y="198.5" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7zW-8Y-E2n" firstAttribute="centerX" secondItem="za3-nd-uKo" secondAttribute="centerX" id="FD9-lW-Nr4"/>
+                            <constraint firstItem="za3-nd-uKo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="Igv-S8-bvM"/>
+                            <constraint firstItem="7zW-8Y-E2n" firstAttribute="centerX" secondItem="zOB-lT-hti" secondAttribute="centerX" id="M5h-a8-tyw"/>
+                            <constraint firstItem="zOB-lT-hti" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16" id="PDu-0e-Qbv"/>
+                            <constraint firstItem="kbT-ik-GBG" firstAttribute="top" secondItem="za3-nd-uKo" secondAttribute="bottom" constant="24" id="Ppn-rl-IOc"/>
+                            <constraint firstItem="kbT-ik-GBG" firstAttribute="centerX" secondItem="za3-nd-uKo" secondAttribute="centerX" id="cyU-vL-4zh"/>
+                            <constraint firstItem="za3-nd-uKo" firstAttribute="centerY" secondItem="zOB-lT-hti" secondAttribute="centerY" id="eDF-lq-UJv"/>
+                            <constraint firstItem="za3-nd-uKo" firstAttribute="top" secondItem="7zW-8Y-E2n" secondAttribute="bottom" constant="32" id="fF3-N2-iE9"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="za3-nd-uKo" secondAttribute="trailing" constant="16" id="fJX-hb-VBk"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="zOB-lT-hti" secondAttribute="trailing" constant="16" id="tde-bf-Z9w"/>
+                            <constraint firstItem="zOB-lT-hti" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="vib-Rh-cGE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="-1038"/>
+            <point key="canvasLocation" x="832.79999999999995" y="-1038.5307346326838"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="wg7-f3-ORb">
@@ -43,6 +82,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -219,7 +261,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="H5z-Iu-gsC" kind="show" id="AXY-HJ-RRm"/>
+                                            <segue destination="tfv-mA-je3" kind="show" id="AXY-HJ-RRm"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SLQ-IZ-r5T">
@@ -244,7 +286,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="x1q-d4-NLs" kind="show" id="fOt-Jf-wyQ"/>
+                                            <segue destination="Ct7-Rh-cDT" kind="show" id="fOt-Jf-wyQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jvU-pw-hIM">
@@ -351,8 +393,8 @@
                         <viewLayoutGuide key="safeArea" id="GBh-SZ-9Tp"/>
                     </view>
                     <connections>
-                        <segue destination="49e-Tb-3d3" kind="show" id="Blo-Ta-pH3"/>
-                        <segue destination="6mP-HW-vaD" kind="show" id="zfm-eu-0cE"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="LoadDashboard" id="Blo-Ta-pH3"/>
+                        <segue destination="6mP-HW-vaD" kind="show" identifier="LoadOnboarding" id="zfm-eu-0cE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqV-K4-UZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -379,24 +421,16 @@
             </objects>
             <point key="canvasLocation" x="-1001" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Privacy Policy-->
         <scene sceneID="Ayh-Kc-oix">
             <objects>
-                <viewController id="x1q-d4-NLs" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="x1q-d4-NLs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKT-H6-ccU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-tb-UKl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <items>
-                                    <navigationItem title="Privacy Policy" id="O0D-mN-kNM">
-                                        <barButtonItem key="backBarButtonItem" title="Back" image="first" id="HqG-Hg-dNC"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-to-grq">
-                                <rect key="frame" x="8" y="64" width="359" height="607"/>
+                                <rect key="frame" x="8" y="52" width="359" height="615"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text"> Updated on 26 August 2019
 
@@ -474,40 +508,29 @@ This privacy policy page was created at privacypolicytemplate.net and modified/g
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="cnQ-to-grq" firstAttribute="centerX" secondItem="ixV-tb-UKl" secondAttribute="centerX" id="16O-dn-L11"/>
-                            <constraint firstItem="ixV-tb-UKl" firstAttribute="leading" secondItem="rTW-C2-YPC" secondAttribute="leading" id="5NQ-Dh-Jfe"/>
-                            <constraint firstItem="cnQ-to-grq" firstAttribute="leading" secondItem="rTW-C2-YPC" secondAttribute="leading" constant="8" id="IuP-EF-Fub"/>
-                            <constraint firstItem="cnQ-to-grq" firstAttribute="top" secondItem="ixV-tb-UKl" secondAttribute="bottom" constant="8" id="QrK-gt-dQJ"/>
-                            <constraint firstAttribute="trailing" secondItem="ixV-tb-UKl" secondAttribute="trailing" id="hk0-Be-jEL"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="cnQ-to-grq" secondAttribute="bottom" constant="-24" id="uYm-Dw-Tvg"/>
-                            <constraint firstItem="ixV-tb-UKl" firstAttribute="top" secondItem="rTW-C2-YPC" secondAttribute="top" id="wkg-P7-rBD"/>
+                            <constraint firstItem="cnQ-to-grq" firstAttribute="centerX" secondItem="ZKT-H6-ccU" secondAttribute="centerX" id="VVO-6f-PfH"/>
+                            <constraint firstItem="cnQ-to-grq" firstAttribute="leading" secondItem="rTW-C2-YPC" secondAttribute="leading" constant="8" id="cGh-nV-0h2"/>
+                            <constraint firstItem="cnQ-to-grq" firstAttribute="top" secondItem="rTW-C2-YPC" secondAttribute="top" constant="8" id="fpS-VH-tMM"/>
+                            <constraint firstAttribute="bottom" secondItem="cnQ-to-grq" secondAttribute="bottom" id="pIb-5f-C1U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rTW-C2-YPC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LyI-MO-Bnr"/>
+                    <navigationItem key="navigationItem" title="Privacy Policy" id="Wou-Sp-jMP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poA-C7-DVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="1927"/>
+            <point key="canvasLocation" x="3066.4000000000001" y="1926.3868065967017"/>
         </scene>
         <!--Terms and Conditions-->
         <scene sceneID="Jaw-ql-Uhy">
             <objects>
-                <viewController id="H5z-Iu-gsC" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="H5z-Iu-gsC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vk4-3K-ehu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="first" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-k2-Q0t">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <items>
-                                    <navigationItem title="Terms and Conditions" id="SzZ-c2-uDi">
-                                        <barButtonItem key="backBarButtonItem" title="Back" image="arrow.left" catalog="system" id="Fzp-7L-ETJ"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yha-jX-c00">
-                                <rect key="frame" x="8" y="58" width="359" height="583"/>
+                                <rect key="frame" x="8" y="52" width="359" height="566"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Updated 28 August 2019  These terms and conditions outline the rules and regulations for the use of Uteroo application.
 
@@ -652,28 +675,23 @@ As long as the application and the information and services on the application a
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5tn-k2-Q0t" firstAttribute="top" secondItem="TQj-cH-1hI" secondAttribute="top" id="4zh-nS-6ef"/>
-                            <constraint firstItem="Yha-jX-c00" firstAttribute="leading" secondItem="TQj-cH-1hI" secondAttribute="leading" constant="8" id="5PH-bs-XV7"/>
-                            <constraint firstItem="5tn-k2-Q0t" firstAttribute="trailing" secondItem="TQj-cH-1hI" secondAttribute="trailing" id="8h1-S1-nSW"/>
-                            <constraint firstItem="TQj-cH-1hI" firstAttribute="bottom" secondItem="Yha-jX-c00" secondAttribute="bottom" constant="6" id="ERl-SR-kvm"/>
-                            <constraint firstItem="Yha-jX-c00" firstAttribute="centerX" secondItem="5tn-k2-Q0t" secondAttribute="centerX" id="LrW-I1-81o"/>
-                            <constraint firstItem="Yha-jX-c00" firstAttribute="top" secondItem="5tn-k2-Q0t" secondAttribute="bottom" constant="2" id="aAj-dV-CLv"/>
-                            <constraint firstItem="5tn-k2-Q0t" firstAttribute="leading" secondItem="TQj-cH-1hI" secondAttribute="leading" id="pBp-Qv-DA0"/>
+                            <constraint firstItem="TQj-cH-1hI" firstAttribute="bottom" secondItem="Yha-jX-c00" secondAttribute="bottom" id="6AN-Cf-UaE"/>
+                            <constraint firstItem="TQj-cH-1hI" firstAttribute="trailing" secondItem="Yha-jX-c00" secondAttribute="trailing" constant="8" id="kHo-82-Z8C"/>
+                            <constraint firstItem="Yha-jX-c00" firstAttribute="top" secondItem="TQj-cH-1hI" secondAttribute="top" constant="8" id="phW-PN-HXz"/>
+                            <constraint firstItem="Yha-jX-c00" firstAttribute="leading" secondItem="TQj-cH-1hI" secondAttribute="leading" constant="8" id="qF6-E1-tpQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TQj-cH-1hI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Terms and Conditions" id="mQu-Ox-nBX">
-                        <barButtonItem key="backBarButtonItem" title="Back" image="square.and.arrow.down.fill" catalog="system" id="iJJ-jE-MK2"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Terms and Conditions" id="4NR-Uh-e9a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMV-8x-YLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="1928"/>
+            <point key="canvasLocation" x="1436" y="1927.2863568215894"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="h34-TM-lfq">
             <objects>
-                <viewController id="t7a-56-Puh" customClass="OnboardingViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="t7a-56-Puh" customClass="OnboardingViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lug-MH-BMh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -745,7 +763,7 @@ As long as the application and the information and services on the application a
         <!--Start Date View Controller-->
         <scene sceneID="waf-xq-zEP">
             <objects>
-                <viewController modalPresentationStyle="pageSheet" id="bTt-r6-Zbo" customClass="StartDateViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="bTt-r6-Zbo" customClass="StartDateViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YZm-ZB-YjW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -819,7 +837,7 @@ As long as the application and the information and services on the application a
         <!--Period Duration View Controller-->
         <scene sceneID="aNn-oj-UeU">
             <objects>
-                <viewController id="x4V-xt-zL9" customClass="PeriodDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="x4V-xt-zL9" customClass="PeriodDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZR-wc-EDA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -894,7 +912,7 @@ As long as the application and the information and services on the application a
         <!--Cycle Duration View Controller-->
         <scene sceneID="NYd-Fj-97E">
             <objects>
-                <viewController id="Lt0-jV-IPM" customClass="CycleDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Lt0-jV-IPM" customClass="CycleDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pET-ie-WoS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -965,7 +983,7 @@ As long as the application and the information and services on the application a
         <!--Setup View Controller-->
         <scene sceneID="vN9-f3-q9F">
             <objects>
-                <viewController id="Cxf-Mi-gxm" customClass="SetupViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Cxf-Mi-gxm" customClass="SetupViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4y-rG-AOo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -993,13 +1011,13 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I agree to Uteroo's" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-Pk-SnM">
-                                <rect key="frame" x="66" y="404" width="141" height="21"/>
+                                <rect key="frame" x="67" y="404" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQG-tJ-htv">
-                                <rect key="frame" x="204" y="399" width="156" height="33"/>
+                                <rect key="frame" x="205" y="399" width="156" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="terms &amp; conditions">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1030,9 +1048,9 @@ As long as the application and the information and services on the application a
                             <constraint firstItem="sQl-bX-TCt" firstAttribute="top" secondItem="mYi-UI-eYt" secondAttribute="bottom" constant="40" id="SH9-cm-BkF"/>
                             <constraint firstItem="Wb3-6s-QKw" firstAttribute="top" secondItem="xQG-tJ-htv" secondAttribute="bottom" constant="24" id="VNs-9l-YvS"/>
                             <constraint firstItem="mYi-UI-eYt" firstAttribute="top" secondItem="Yy6-bg-o1a" secondAttribute="bottom" constant="22" id="WVQ-2T-1zL"/>
-                            <constraint firstItem="Rq6-Pk-SnM" firstAttribute="leading" secondItem="sQl-bX-TCt" secondAttribute="trailing" constant="18" id="YgW-8F-Svf"/>
+                            <constraint firstItem="Rq6-Pk-SnM" firstAttribute="leading" secondItem="sQl-bX-TCt" secondAttribute="trailing" constant="19" id="YgW-8F-Svf"/>
                             <constraint firstItem="xQG-tJ-htv" firstAttribute="top" secondItem="mYi-UI-eYt" secondAttribute="bottom" constant="40" id="bOD-YE-gD1"/>
-                            <constraint firstItem="Giw-ga-ZMV" firstAttribute="trailing" secondItem="xQG-tJ-htv" secondAttribute="trailing" constant="15" id="dwC-Gl-Dze"/>
+                            <constraint firstItem="Giw-ga-ZMV" firstAttribute="trailing" secondItem="xQG-tJ-htv" secondAttribute="trailing" constant="14" id="dwC-Gl-Dze"/>
                             <constraint firstItem="Giw-ga-ZMV" firstAttribute="trailing" secondItem="mYi-UI-eYt" secondAttribute="trailing" constant="27" id="fhj-GB-OUe"/>
                             <constraint firstItem="xQG-tJ-htv" firstAttribute="leading" secondItem="Rq6-Pk-SnM" secondAttribute="trailing" constant="-3" id="hgO-AG-03q"/>
                             <constraint firstItem="Yy6-bg-o1a" firstAttribute="top" secondItem="Giw-ga-ZMV" secondAttribute="top" constant="8" id="mdh-kO-pWP"/>
@@ -1103,13 +1121,50 @@ As long as the application and the information and services on the application a
             </objects>
             <point key="canvasLocation" x="-2098" y="942"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UE6-b1-EX0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tfv-mA-je3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tRv-rV-E3c"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t0e-xK-teZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H5z-Iu-gsC" kind="relationship" relationship="rootViewController" id="2e6-tR-9ye"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrF-AX-FMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.80000000000001" y="1927.2863568215894"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9qr-Ez-SQs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ct7-Rh-cDT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="nIV-nh-22V"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fBj-TO-csV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x1q-d4-NLs" kind="relationship" relationship="rootViewController" id="oBX-RX-gTk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-LZ-mzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2127.1999999999998" y="1926.3868065967017"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="first" width="30" height="30"/>
         <image name="logo.png" width="1610" height="1710"/>
+        <image name="ring.png" width="425" height="423"/>
         <image name="second" width="30" height="30"/>
-        <image name="square.and.arrow.down.fill" catalog="system" width="60" height="64"/>
         <image name="undraw_booking_33fn.png" width="1368" height="947"/>
         <image name="undraw_events_2p66.png" width="1206" height="961"/>
         <image name="undraw_girl_just_wanna_have_fun_9d5u.png" width="1263" height="966"/>
@@ -1120,6 +1175,6 @@ As long as the application and the information and services on the application a
         <segue reference="sG7-WR-2UG"/>
         <segue reference="gOZ-GX-lbB"/>
         <segue reference="txR-hP-0Op"/>
-        <segue reference="Blo-Ta-pH3"/>
+        <segue reference="cUK-rz-Iyd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,7 +13,7 @@ class OnboardingViewController: UIViewController {
         
     override func loadView() {
     super.loadView()
-        let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLoad")
+        /*let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLoad")
         if(isFirstLaunch != false) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "home")
@@ -23,7 +23,7 @@ class OnboardingViewController: UIViewController {
             //presentViewController:viewController animated:YE completion:nil
             //show(vc, sender: self)
             //performSegue(withIdentifier: "id", sender: self)
-        }
+        }*/
     }
     
     override func didReceiveMemoryWarning() {

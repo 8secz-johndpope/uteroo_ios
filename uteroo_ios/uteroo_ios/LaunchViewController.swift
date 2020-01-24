@@ -9,16 +9,23 @@
 import Foundation
 import UIKit
 
-class LaunchViewController: UIViewController {
+class LaunchViewController: UIViewController, UIWindowSceneDelegate {
     
     override func viewDidLoad() {
                super.viewDidLoad()
                // Do any additional setup after loading the view, typically from a nib.
-        if(UserDefaults.standard.bool(forKey: "isFirstLoad")){
-            self.performSegue(withIdentifier: "onboarding", sender: self)
-        }
-        else{
-            self.performSegue(withIdentifier: "home", sender: self)
+       let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLoad")
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       if(isFirstLaunch != false) {
+           let board = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "home") as UIViewController
+           let window = UIApplication.shared.windows.first
+           window?.rootViewController = board
+       }
+       else{
+        
+        let board = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "onboarding") as UIViewController
+        let window = UIApplication.shared.windows.first
+        window?.rootViewController = board
         }
            }
 }

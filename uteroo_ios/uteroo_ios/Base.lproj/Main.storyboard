@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6mP-HW-vaD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eos-q6-bJ0">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -28,11 +28,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="8rJ-Kc-sve" customClass="CalendarViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GzU-5V-C0N" customClass="FSCalendar">
-                                <rect key="frame" x="8" y="8" width="359" height="258"/>
+                                <rect key="frame" x="8" y="8" width="359" height="238"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
@@ -309,6 +309,56 @@
             </objects>
             <point key="canvasLocation" x="833" y="1077"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="SK6-0h-X9U">
+            <objects>
+                <viewController id="Eos-q6-bJ0" customClass="LaunchViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eXP-9i-fDg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-w6-tVu">
+                                <rect key="frame" x="24" y="93" width="327" height="174.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c6H-w6-tVu" secondAttribute="height" multiplier="15:8" id="gKd-xl-co3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uteroo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-9c-W5C">
+                                <rect key="frame" x="16" y="303.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's all about you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUX-v7-guN">
+                                <rect key="frame" x="16" y="360.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GBh-SZ-9Tp" firstAttribute="trailing" secondItem="MAg-9c-W5C" secondAttribute="trailing" constant="16" id="2l2-Vz-yJm"/>
+                            <constraint firstItem="GBh-SZ-9Tp" firstAttribute="trailing" secondItem="c6H-w6-tVu" secondAttribute="trailing" constant="24" id="5Y6-AP-X3a"/>
+                            <constraint firstItem="c6H-w6-tVu" firstAttribute="leading" secondItem="GBh-SZ-9Tp" secondAttribute="leading" constant="24" id="KnA-p6-E1p"/>
+                            <constraint firstItem="MAg-9c-W5C" firstAttribute="top" secondItem="c6H-w6-tVu" secondAttribute="bottom" constant="36" id="QhG-uW-opA"/>
+                            <constraint firstItem="GBh-SZ-9Tp" firstAttribute="trailing" secondItem="dUX-v7-guN" secondAttribute="trailing" constant="16" id="RPg-gh-0PG"/>
+                            <constraint firstItem="dUX-v7-guN" firstAttribute="top" secondItem="MAg-9c-W5C" secondAttribute="bottom" constant="36" id="VZ9-LN-lSA"/>
+                            <constraint firstItem="dUX-v7-guN" firstAttribute="leading" secondItem="GBh-SZ-9Tp" secondAttribute="leading" constant="16" id="lwI-rf-CJR"/>
+                            <constraint firstItem="c6H-w6-tVu" firstAttribute="top" secondItem="GBh-SZ-9Tp" secondAttribute="top" constant="93" id="wb1-uU-Mpx"/>
+                            <constraint firstItem="MAg-9c-W5C" firstAttribute="leading" secondItem="GBh-SZ-9Tp" secondAttribute="leading" constant="16" id="wwE-zd-KRc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBh-SZ-9Tp"/>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="show" id="Blo-Ta-pH3"/>
+                        <segue destination="6mP-HW-vaD" kind="show" id="zfm-eu-0cE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqV-K4-UZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2098" y="0.0"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -327,18 +377,18 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1220" y="1892"/>
+            <point key="canvasLocation" x="-1001" y="0.0"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ayh-Kc-oix">
             <objects>
                 <viewController id="x1q-d4-NLs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKT-H6-ccU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-tb-UKl">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <items>
                                     <navigationItem title="Privacy Policy" id="O0D-mN-kNM">
                                         <barButtonItem key="backBarButtonItem" title="Back" image="first" id="HqG-Hg-dNC"/>
@@ -346,7 +396,7 @@
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-to-grq">
-                                <rect key="frame" x="8" y="96" width="359" height="546"/>
+                                <rect key="frame" x="8" y="64" width="359" height="607"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text"> Updated on 26 August 2019
 
@@ -445,11 +495,11 @@ This privacy policy page was created at privacypolicytemplate.net and modified/g
             <objects>
                 <viewController id="H5z-Iu-gsC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vk4-3K-ehu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" backIndicatorImage="first" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-k2-Q0t">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <items>
                                     <navigationItem title="Terms and Conditions" id="SzZ-c2-uDi">
                                         <barButtonItem key="backBarButtonItem" title="Back" image="arrow.left" catalog="system" id="Fzp-7L-ETJ"/>
@@ -457,7 +507,7 @@ This privacy policy page was created at privacypolicytemplate.net and modified/g
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yha-jX-c00">
-                                <rect key="frame" x="8" y="90" width="359" height="522"/>
+                                <rect key="frame" x="8" y="58" width="359" height="583"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Updated 28 August 2019  These terms and conditions outline the rules and regulations for the use of Uteroo application.
 
@@ -625,29 +675,29 @@ As long as the application and the information and services on the application a
             <objects>
                 <viewController id="t7a-56-Puh" customClass="OnboardingViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lug-MH-BMh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_girl_just_wanna_have_fun_9d5u.png" translatesAutoresizingMaskIntoConstraints="NO" id="pT2-dD-zcm">
-                                <rect key="frame" x="8" y="52" width="359" height="244"/>
+                                <rect key="frame" x="8" y="64" width="359" height="244"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pT2-dD-zcm" secondAttribute="height" multiplier="359:283" constant="49.473498233215594" id="wMw-2j-Wtk"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there, welcome to Uteroo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khS-cH-G8X">
-                                <rect key="frame" x="8" y="351" width="359" height="21"/>
+                                <rect key="frame" x="8" y="363" width="359" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us help you track your period cycle, but before we start, we just need a few details from you please." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-44-9Xe">
-                                <rect key="frame" x="8" y="390" width="359" height="61"/>
+                                <rect key="frame" x="8" y="402" width="359" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-oQ-Vjg">
-                                <rect key="frame" x="24" y="467" width="327" height="30"/>
+                                <rect key="frame" x="24" y="479" width="327" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -657,7 +707,7 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT0-aa-sca">
-                                <rect key="frame" x="24" y="513" width="327" height="30"/>
+                                <rect key="frame" x="24" y="525" width="327" height="30"/>
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
@@ -697,23 +747,23 @@ As long as the application and the information and services on the application a
             <objects>
                 <viewController modalPresentationStyle="pageSheet" id="bTt-r6-Zbo" customClass="StartDateViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YZm-ZB-YjW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_events_2p66.png" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-7O-C6d">
-                                <rect key="frame" x="8" y="52" width="359" height="234"/>
+                                <rect key="frame" x="8" y="64" width="359" height="234"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cAd-7O-C6d" secondAttribute="height" multiplier="15:8" constant="-79.75" id="dW2-dT-wb4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When was the start date of your last period?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV9-hB-3tT">
-                                <rect key="frame" x="8" y="302" width="375" height="21"/>
+                                <rect key="frame" x="8" y="314" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="QzU-c0-HTC">
-                                <rect key="frame" x="24" y="331" width="327" height="162"/>
+                                <rect key="frame" x="24" y="343" width="327" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="ZKb-Jy-e87"/>
                                 </constraints>
@@ -722,7 +772,7 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ci-cX-i1U">
-                                <rect key="frame" x="24" y="501" width="327" height="30"/>
+                                <rect key="frame" x="24" y="513" width="327" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -771,23 +821,23 @@ As long as the application and the information and services on the application a
             <objects>
                 <viewController id="x4V-xt-zL9" customClass="PeriodDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZR-wc-EDA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_time_management_30iu.png" translatesAutoresizingMaskIntoConstraints="NO" id="rXy-8h-cBz">
-                                <rect key="frame" x="8" y="52" width="359" height="245"/>
+                                <rect key="frame" x="8" y="64" width="359" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rXy-8h-cBz" secondAttribute="height" multiplier="15:8" constant="-100.375" id="vGO-OS-Jld"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many days does your period last? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-sy-We2">
-                                <rect key="frame" x="8" y="313" width="359" height="21"/>
+                                <rect key="frame" x="8" y="325" width="359" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-cC-BEh">
-                                <rect key="frame" x="24" y="342" width="327" height="162"/>
+                                <rect key="frame" x="24" y="354" width="327" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="MTx-2X-24U"/>
                                 </constraints>
@@ -797,7 +847,7 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwt-Xu-3hZ">
-                                <rect key="frame" x="24" y="512" width="327" height="30"/>
+                                <rect key="frame" x="24" y="524" width="327" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -846,29 +896,29 @@ As long as the application and the information and services on the application a
             <objects>
                 <viewController id="Lt0-jV-IPM" customClass="CycleDurationViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pET-ie-WoS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_booking_33fn.png" translatesAutoresizingMaskIntoConstraints="NO" id="pB8-GT-9Ab">
-                                <rect key="frame" x="8" y="52" width="359" height="248"/>
+                                <rect key="frame" x="8" y="64" width="359" height="248"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pB8-GT-9Ab" secondAttribute="height" multiplier="15:8" constant="-106" id="ZBv-Wr-dcg"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many days does your cycle last?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMQ-gG-5Z8">
-                                <rect key="frame" x="27" y="308" width="359" height="21"/>
+                                <rect key="frame" x="27" y="320" width="359" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-2b-ayW">
-                                <rect key="frame" x="24" y="337" width="327" height="162"/>
+                                <rect key="frame" x="24" y="349" width="327" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="mdF-cY-q5l"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-Jz-LhU">
-                                <rect key="frame" x="24" y="507" width="327" height="30"/>
+                                <rect key="frame" x="24" y="519" width="327" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -917,23 +967,23 @@ As long as the application and the information and services on the application a
             <objects>
                 <viewController id="Cxf-Mi-gxm" customClass="SetupViewController" customModule="uteroo_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4y-rG-AOo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_terms_lso0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yy6-bg-o1a">
-                                <rect key="frame" x="8" y="52" width="359" height="232"/>
+                                <rect key="frame" x="8" y="64" width="359" height="232"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="232" id="r8Z-Eb-J6U"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One last thing before you are ready to start tracking." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYi-UI-eYt">
-                                <rect key="frame" x="16" y="306" width="332" height="41"/>
+                                <rect key="frame" x="16" y="318" width="332" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-bX-TCt">
-                                <rect key="frame" x="13" y="387" width="37" height="31"/>
+                                <rect key="frame" x="13" y="399" width="37" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="l2s-66-5X9"/>
                                 </constraints>
@@ -943,13 +993,13 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I agree to Uteroo's" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-Pk-SnM">
-                                <rect key="frame" x="66" y="392" width="141" height="21"/>
+                                <rect key="frame" x="66" y="404" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQG-tJ-htv">
-                                <rect key="frame" x="204" y="387" width="156" height="33"/>
+                                <rect key="frame" x="204" y="399" width="156" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="terms &amp; conditions">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -959,7 +1009,7 @@ As long as the application and the information and services on the application a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-6s-QKw">
-                                <rect key="frame" x="16" y="444" width="343" height="30"/>
+                                <rect key="frame" x="16" y="456" width="343" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Accept">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1037,7 +1087,6 @@ As long as the application and the information and services on the application a
         <!--Navigation Controller-->
         <scene sceneID="2Sv-oW-wes">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ba9-dD-ymy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="onboarding" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="6mP-HW-vaD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Joh-ww-S9Q"/>
@@ -1050,13 +1099,15 @@ As long as the application and the information and services on the application a
                         <segue destination="t7a-56-Puh" kind="relationship" relationship="rootViewController" id="1yn-6v-iC1"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba9-dD-ymy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1644" y="2807.9460269865071"/>
+            <point key="canvasLocation" x="-2098" y="942"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="first" width="30" height="30"/>
+        <image name="logo.png" width="1610" height="1710"/>
         <image name="second" width="30" height="30"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="60" height="64"/>
         <image name="undraw_booking_33fn.png" width="1368" height="947"/>
@@ -1069,5 +1120,6 @@ As long as the application and the information and services on the application a
         <segue reference="sG7-WR-2UG"/>
         <segue reference="gOZ-GX-lbB"/>
         <segue reference="txR-hP-0Op"/>
+        <segue reference="Blo-Ta-pH3"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		59B441ADE27F6621BF09D2E1 /* Pods_uteroo_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA70EFE26F40DC743D478EDC /* Pods_uteroo_iosTests.framework */; };
 		690E548223CF69130022ACCE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690E548123CF69130022ACCE /* OnboardingViewController.swift */; };
+		6953379523D9F77600CD644C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953379423D9F77600CD644C /* Sample.swift */; };
 		697198FC23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */; };
 		697198FF23CE246A004D07C0 /* undraw_events_2p66.png in Resources */ = {isa = PBXBuildFile; fileRef = 697198FE23CE246A004D07C0 /* undraw_events_2p66.png */; };
 		6971990123CE258A004D07C0 /* undraw_time_management_30iu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */; };
@@ -60,6 +61,7 @@
 		51BAC6C64F6D569E36353E0C /* Pods-uteroo_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_iosTests.release.xcconfig"; path = "Target Support Files/Pods-uteroo_iosTests/Pods-uteroo_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		67BB4846123796DB54EE0E93 /* Pods-uteroo_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uteroo_ios.release.xcconfig"; path = "Target Support Files/Pods-uteroo_ios/Pods-uteroo_ios.release.xcconfig"; sourceTree = "<group>"; };
 		690E548123CF69130022ACCE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		6953379423D9F77600CD644C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		697198FB23CE1FFB004D07C0 /* undraw_girl_just_wanna_have_fun_9d5u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_girl_just_wanna_have_fun_9d5u.png; sourceTree = "<group>"; };
 		697198FE23CE246A004D07C0 /* undraw_events_2p66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_events_2p66.png; sourceTree = "<group>"; };
 		6971990023CE258A004D07C0 /* undraw_time_management_30iu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undraw_time_management_30iu.png; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				69B73BA923D37547003433D3 /* TermsAndConditionsViewController.swift */,
 				69B73BAB23D37C93003433D3 /* SetupViewController.swift */,
 				69ADEC0623D57FAC00AE9C46 /* StartDateViewController.swift */,
+				6953379423D9F77600CD644C /* Sample.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				69791F6523CA0335000B1F0C /* AccountViewController.swift in Sources */,
 				69B73BA223D357AE003433D3 /* PeriodDurationViewController.swift in Sources */,
 				69791F3023C9EB9D000B1F0C /* AppDelegate.swift in Sources */,
+				6953379523D9F77600CD644C /* Sample.swift in Sources */,
 				69791F3223C9EB9D000B1F0C /* SceneDelegate.swift in Sources */,
 				69791F3C23C9EB9D000B1F0C /* uteroo_ios.xcdatamodeld in Sources */,
 				69791F6923CA1381000B1F0C /* SettingsTableViewController.swift in Sources */,

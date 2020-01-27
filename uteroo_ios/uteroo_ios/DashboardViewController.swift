@@ -8,26 +8,27 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    override func loadView() {
-        super.loadView()
-       /* let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLoad")
-        if(isFirstLaunch != false) {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "home")
-            //self.present(vc, animated:true, completion:nil)
-            //show(vc, sender: self)"
-            performSegue(withIdentifier: "id", sender: self)
-        }*/
+    @IBOutlet var collectionView: UICollectionView!
+    var numberOfCells = 28
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return numberOfCells
     }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CircleCell", for: indexPath)
 
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        self.collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: CircleLayout())
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
-
-
 }
+
 

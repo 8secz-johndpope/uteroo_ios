@@ -11,7 +11,6 @@ import FSCalendar
 
 class CalendarViewController: UIViewController {
 
-    
     @IBOutlet weak var calendarView: FSCalendar!
     
     override func viewDidLoad() {

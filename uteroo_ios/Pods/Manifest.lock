@@ -1,16 +1,22 @@
 PODS:
   - FSCalendar (2.8.1)
+  - GRDB.swift (4.8.0):
+    - GRDB.swift/standard (= 4.8.0)
+  - GRDB.swift/standard (4.8.0)
 
 DEPENDENCIES:
   - FSCalendar
+  - GRDB.swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FSCalendar
+    - GRDB.swift
 
 SPEC CHECKSUMS:
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  GRDB.swift: ac387dac9ba3789a89563d6f42fed0fb7bd5a865
 
-PODFILE CHECKSUM: a2d1c80a57cd1c4bb10ab5541c2a8590869b035c
+PODFILE CHECKSUM: e0b4ec54bae0d6c651c78e9bd501cbf68d9e49e1
 
 COCOAPODS: 1.8.4

@@ -39,14 +39,16 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-2w-cmo" customClass="CircleView" customModule="uteroo_ios" customModuleProvider="target">
-                                                            <rect key="frame" x="5" y="5" width="25" height="25"/>
+                                                        <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="OLx-2w-cmo" customClass="CircleView" customModule="uteroo_ios" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="8" width="22" height="22"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="OLx-2w-cmo" firstAttribute="top" secondItem="jaI-Hp-bia" secondAttribute="top" constant="8" id="22P-Gf-XT1"/>
                                                         <constraint firstItem="OLx-2w-cmo" firstAttribute="leading" secondItem="jaI-Hp-bia" secondAttribute="leading" constant="8" id="dhR-kQ-Wih"/>
+                                                        <constraint firstAttribute="bottom" secondItem="OLx-2w-cmo" secondAttribute="bottom" constant="20" id="lZJ-CC-1cb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OLx-2w-cmo" secondAttribute="trailing" constant="15" id="rP2-8Q-jl0"/>
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                             </collectionViewCell>

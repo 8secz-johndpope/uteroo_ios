@@ -28,6 +28,9 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
         self.collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: CircleLayout())
         collectionView.delegate = self
         collectionView.dataSource = self
+        let viewModel = DashboardViewModel()
+        //viewModel.addMenstrualCycle()
+        viewModel.getPeriodDayCount()
     }
 }
 

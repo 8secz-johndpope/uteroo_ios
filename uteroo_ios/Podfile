@@ -9,6 +9,7 @@ target 'uteroo_ios' do
 
   # Pods for uteroo_ios
    pod 'FSCalendar'
+   pod 'GRDB.swift'
 
   target 'uteroo_iosTests' do
     inherit! :search_paths
